@@ -8,7 +8,7 @@ pipeline {
      }       
   }       
   steps {
-       sh 'docker build itzg/minecraft-server'
+       sh 'docker build docker.io/itzg/minecraft-server:latest'
        }
      }
    }
