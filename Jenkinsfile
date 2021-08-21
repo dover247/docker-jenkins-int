@@ -8,7 +8,11 @@ pipeline {
      }       
   }       
   steps {
-       sh 'docker build docker.io/itzg/minecraft-server:latest'
+       sh 'cd /tmp/'
+       sh 'git clone https://github.com/Guy-Incognito/simple-http-server.git'
+       sh 'simple-http-server'
+       sh 'docker build . -t -simple-http-server'
+       sh 'docker images'
        }
      }
    }
