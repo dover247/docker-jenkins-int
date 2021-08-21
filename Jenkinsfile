@@ -1,14 +1,14 @@
 pipeline {
     agent none
    stages {     
-    stage('Maven Install') {
+    stage('Build') {
       agent {         
        any {          
          image 'alpine'     
      }       
   }       
   steps {
-      sh 'echo "test"'
+       sh 'docker build docker.io/itzg/minecraft-server'
        }
      }
    }
