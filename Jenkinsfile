@@ -8,7 +8,7 @@ pipeline {
      }       
   }       
   steps {
-       sh '/usr/bin/docker build docker.io/itzg/minecraft-server'
+      sh 'echo "test"'
        }
      }
    }
