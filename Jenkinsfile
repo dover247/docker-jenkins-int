@@ -4,7 +4,7 @@ pipeline {
 
     stages {
 
-        stage ('build stage') {
+        stage('build stage') {
             
             docker {
 
