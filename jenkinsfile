@@ -1,0 +1,21 @@
+pipeline {
+    
+    agent any
+
+    stages {
+
+        stage ('build stage') {
+            
+            docker {
+
+                image 'alpine'
+                
+                }   
+
+            steps {
+            
+                echo "building image"
+            }
+        }
+    }
+}
