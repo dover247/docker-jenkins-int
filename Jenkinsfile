@@ -2,15 +2,12 @@ pipeline {
     agent any
     stages {
         stage('build stage') {
-            agent {
-                docker {
-                    image 'alpine'
-                } 
+            echo "Building"
             }
-            steps {
-                echo "building image"
-                sh 'docker build docker.io/itzg/minecraft-server'
-            }
+    steps {
+        echo "building image"
+        sh 'docker build docker.io/itzg/minecraft-server'
+        }
         }
     }
 }
