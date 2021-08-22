@@ -9,7 +9,6 @@ pipeline {
   }       
   steps {
        sh 'docker build -t python-container .'
-       sh 'docker run --rm python-container'
        }
      }
    }
