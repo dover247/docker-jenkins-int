@@ -2,5 +2,5 @@
 
 FROM alpine
 WORKDIR /docker-jenkins-int
-RUN python3 app.py
+RUN python app.py
 
